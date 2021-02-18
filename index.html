@@ -8,20 +8,20 @@
 </head>
 <body>
     <header>
-        <h1>freeCodeCamp Survey</h1>
-        <p>Thank you for taking the time to help us improve the platform</p>
+        <h1 id="title">freeCodeCamp Survey</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
 
     <form action="index.html" method="post">
         <fieldset>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <input type="text" id="name-label" name="name" placeholder="Enter your name">
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Enter your email">
+            <input type="text" id="email-label" name="email" required placeholder="Enter your email">
             <label for="age">Age(optional)</label>
-            <input type="number" id="age" name="age" placeholder="Age">
-            <label for="option">Which option best describes your current role?</label>
-            <select name="option" id="option">
+            <input type="number" id="number-label" name="age" placeholder="Age" min="1" max="99">
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select name="option" id="dropdown">
                 <option value="" selected="selected">Select current role</option>
                 <option value="student">Student</option>
                 <option value="full-time-job">Full Time Job</option>
@@ -31,9 +31,9 @@
             </select>
 
             <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
-            <input type="radio" id="definitely" name="recommend" value="definitely"><label for="definitely">Definitely</label>
-            <input type="radio" id="maybe" name="recommend" value="maybe"><label for="maybe">Maybe</label>
-            <input type="radio" id="not-sure" name="recommend" value="not-sure"><label for="not-sure">Note sure</label>
+            <input type="radio" id="definitely" name="recommendation" value="definitely"><label for="definitely">Definitely</label>
+            <input type="radio" id="maybe" name="recommendation" value="maybe"><label for="maybe">Maybe</label>
+            <input type="radio" id="not-sure" name="recommendation" value="not-sure"><label for="not-sure">Note sure</label>
 
             <label for="feature">What is your favorite feature of freeCodeCamp?</label>
             <select name="feature" id="feature">
@@ -59,7 +59,7 @@
 
             <label for="comments">Any comments or suggestions?</label>
             <textarea name="comments" id="comments"></textarea>
-            <button type="submit">Submit</button>
+            <button id="submit">Submit</button>
         </fieldset>
     </form>
 </body>
