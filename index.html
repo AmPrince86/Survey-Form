@@ -12,7 +12,7 @@
         <p>Thank you for taking the time to help us improve the platform</p>
     </header>
 
-    <form>
+    <form action="index.html" method="post">
         <fieldset>
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name">
@@ -51,8 +51,15 @@
             <input type="checkbox" id="challenges" name="challenges" value="challenges"><label for="challenges">Challenges</label>
             <input type="checkbox" id="open-source" name="open-source" value="open-source"><label for="open-source">Open Source Community</label>
             <input type="checkbox" id="help-room" name="help-room" value="help-room"><label for="help-room">Gitter help rooms</label>
-            <input type="check" name="" id="">
+            <input type="checkbox" id="videos" name="videos" value="videos"><label for="videos">Videos</label>
+            <input type="checkbox" id="city-meetups" name="meetups" value="meetups"><label for="city-meetups">City Meetups</label>
+            <input type="checkbox" id="wiki" name="wiki" value="wiki"><label for="wiki">Wiki</label>
+            <input type="checkbox" id="forum" name="forum" value="form"><label for="forum">Forum</label>
+            <input type="checkbox" id="courses" name="courses" value="courses"><label for="courses">Additional Courses</label>
 
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea name="comments" id="comments"></textarea>
+            <button type="submit">Submit</button>
         </fieldset>
     </form>
 </body>
