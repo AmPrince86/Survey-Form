@@ -3,10 +3,23 @@
 }
 
 body {
+    font-family: 'Lato', sans-serif;
     margin: 0 auto;
 }
 
 /*********** HEADER STYLE ***********/
+header {
+    text-align: center;
+}
 
+h1 {
+    border: 0px solid green;
+    margin-bottom: 0;
+}
+p {
+    border: 0px solid red;
+    margin-top: 0;
+}
 
 /*********** FORM STYLE ***********/
+
