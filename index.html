@@ -18,13 +18,22 @@
     <div id="container">
         <form action="index.html" method="post">
             <fieldset class="survey-form">
-            <div class="flex section-one">
+
+            <div class="flex">
                 <label for="name">Name</label>
                 <input type="text" id="name-label" name="name" placeholder="Enter your name">
+            </div>
+
+            <div class="flex">
                 <label for="email">Email</label>
                 <input type="text" id="email-label" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="flex">
                 <label for="age">Age(optional)</label>
                 <input type="number" id="number-label" name="age" placeholder="Age" min="1" max="99">
+            </div>
+            
                 <label for="dropdown">Which option best describes your current role?</label>
                 <select name="option" id="dropdown">
                     <option value="" selected="selected">Select current role</option>
@@ -34,15 +43,14 @@
                     <option value="prefer-not-to-say">Prefer not to say</option>
                     <option value="other">Other</option>
                 </select>
-            </div>
 
-            <div class="flex section-two">
+            <div class="section-box">
                 <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
                 <input type="radio" id="definitely" name="recommendation" value="definitely"><label for="definitely">Definitely</label>
                 <input type="radio" id="maybe" name="recommendation" value="maybe"><label for="maybe">Maybe</label>
                 <input type="radio" id="not-sure" name="recommendation" value="not-sure"><label for="not-sure">Note sure</label>
-            </div>
-            <div class="flex section-three">
+            </div>  
+
                 <label for="feature">What is your favorite feature of freeCodeCamp?</label>
                 <select name="feature" id="feature">
                     <option value="" selected="selected">Select an option</option>
@@ -51,8 +59,8 @@
                     <option value="community">Community</option>
                     <option value="open-source">Open Source</option>
                 </select>
-            </div>
-            <div class="flex section-four">
+
+            <div class="section-box">
                 <label></label>What would you like to improve?<span>(Check all that apply)</span></label>
                 <input type="checkbox" id="front-end" name="font-end-projects" value="front-end"><label for="front-end">Front-end Projects</label> 
                 <input type="checkbox" id="back-end" name="back-end-projects" value="back-end"><label for="back-end">Back-end Projects</label>
@@ -66,7 +74,7 @@
                 <input type="checkbox" id="forum" name="forum" value="form"><label for="forum">Forum</label>
                 <input type="checkbox" id="courses" name="courses" value="courses"><label for="courses">Additional Courses</label>
             </div>
-            <div class="flex section-five">
+            <div class="comments">
                 <label for="comments">Any comments or suggestions?</label>
                 <textarea name="comments" id="comments"></textarea>
                 <button id="submit">Submit</button>
