@@ -51,10 +51,13 @@ input, select {
     border-radius: 5px;
 }
 
+span {
+    font-size: 13px;
+}
+
 /*********** SELECT SECTION ***********/
 
 #dropdown, #feature {
-    display: block;
     width: 100%;
 }
 
@@ -63,25 +66,28 @@ select {
 }
 
 /*********** SECTION-BOX ***********/
+.section-box {
+    line-height: 1.5rem;
+}
 
 .section-box label {
     display: block;
+    line-height: 1.6rem;
 }
 
 .section-box input[type="checkbox"] + label,
 .section-box input[type="radio"] + label {
     display: inline;
-    width: 100%;
+    padding: 10px;
 }
 
-.section-box label {
-    padding: 20px;
+label.option {
+    border: 3px solid red;
 }
-
 /*********** COMMENTS SECTION ***********/
 
 .comments label {
-    display: block;
+    display: inline-block;
 }
 
 textarea {
@@ -90,27 +96,12 @@ textarea {
 }
 
 button {
+    color: white;
     width: 100%;
     margin-top: 25px;
     padding: 10px;
+    background: #37af65;
     border: none;
     border-radius: 2px;
 }
-
-/********* MEDIA QUERIES 768PX *********/
-
-@media (min-width: 768px) {
-    
-    #survey-form {
-        flex-direction: row;
-    }Amber A
-
-    .section-box label {
-        flex-basis: 25%;
-    }
-
-    .section-box input[type="checkbox"],
-    .section-box input[type="radio"] {
-        flex-basis: 75%;
-    }
-} 
+ 

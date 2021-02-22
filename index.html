@@ -30,11 +30,11 @@
             </div>
 
             <div class="flex">
-                <label id="number-label" for="number">Age(optional)</label>
+                <label id="number-label" for="number">Age&nbsp;<span>(optional)</span></label>
                 <input type="number" id="number" name="age" placeholder="Age" min="0" max="100">
             </div>
             
-                <label for="dropdown">Which option best describes your current role?</label>
+                <label class="option" for="dropdown">Which option best describes your current role?</label>
                 <select name="option" id="dropdown">
                     <option value="" selected="selected">Select current role</option>
                     <option value="student">Student</option>
@@ -46,9 +46,14 @@
 
             <div class="section-box">
                 <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
-                <input type="radio" id="definitely" name="recommendation" value="definitely"><label for="definitely">Definitely</label>
-                <input type="radio" id="maybe" name="recommendation" value="maybe"><label for="maybe">Maybe</label>
-                <input type="radio" id="not-sure" name="recommendation" value="not-sure"><label for="not-sure">Note sure</label>
+                <input type="radio" id="definitely" name="recommendation" value="definitely">
+                <label for="definitely">Definitely</label>
+                <br>
+                <input type="radio" id="maybe" name="recommendation" value="maybe">
+                <label for="maybe">Maybe</label>
+                <br>
+                <input type="radio" id="not-sure" name="recommendation" value="not-sure">
+                <label for="not-sure">Note sure</label>
             </div>  
 
                 <label for="feature">What is your favorite feature of freeCodeCamp?</label>
@@ -61,17 +66,28 @@
                 </select>
 
             <div class="section-box">
-                <label></label>What would you like to improve?<span>(Check all that apply)</span></label>
-                <input type="checkbox" id="front-end" name="font-end-projects" value="front-end"><label for="front-end">Front-end Projects</label> 
+                <label></label>What would you like to improve?&nbsp;<span>(Check all that apply)</span></label>
+                <br>
+                <input type="checkbox" id="front-end" name="font-end-projects" value="front-end"><label for="front-end">Front-end Projects</label>
+                <br> 
                 <input type="checkbox" id="back-end" name="back-end-projects" value="back-end"><label for="back-end">Back-end Projects</label>
+                <br>
                 <input type="checkbox" id="data" name="data" value="data"><label for="data">Data Visualization</label>
+                <br>
                 <input type="checkbox" id="challenges" name="challenges" value="challenges"><label for="challenges">Challenges</label>
+                <br>
                 <input type="checkbox" id="open-source" name="open-source" value="open-source"><label for="open-source">Open Source Community</label>
+                <br>
                 <input type="checkbox" id="help-room" name="help-room" value="help-room"><label for="help-room">Gitter help rooms</label>
+                <br>
                 <input type="checkbox" id="videos" name="videos" value="videos"><label for="videos">Videos</label>
+                <br>
                 <input type="checkbox" id="city-meetups" name="meetups" value="meetups"><label for="city-meetups">City Meetups</label>
+                <br>
                 <input type="checkbox" id="wiki" name="wiki" value="wiki"><label for="wiki">Wiki</label>
+                <br>
                 <input type="checkbox" id="forum" name="forum" value="form"><label for="forum">Forum</label>
+                <br>
                 <input type="checkbox" id="courses" name="courses" value="courses"><label for="courses">Additional Courses</label>
             </div>
             <div class="comments">
