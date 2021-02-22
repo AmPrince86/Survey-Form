@@ -8,7 +8,6 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0 auto;
     max-width: 600px;
-    height: 100%;
 }
 
 /*********** TITLE ***********/
@@ -18,11 +17,9 @@ header {
 }
 
 h1 {
-    border: 0px solid green;
     margin-bottom: 0;
 }
 p {
-    border: 0px solid red;
     margin-top: 12px;
 }
 
@@ -30,6 +27,8 @@ p {
 
 form {
     background-color: #282745;
+    border-radius: 5px;
+    padding: 25px;
 }
 
 fieldset {
@@ -42,7 +41,8 @@ fieldset {
 }
 
 label {
-    padding: 10px 0 10px 0;
+    line-height: 2.2rem;
+    padding-top: 15px;
 }
 
 input, select {
@@ -81,9 +81,6 @@ select {
     padding: 10px;
 }
 
-label.option {
-    border: 3px solid red;
-}
 /*********** COMMENTS SECTION ***********/
 
 .comments label {
