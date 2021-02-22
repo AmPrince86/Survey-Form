@@ -36,7 +36,7 @@ fieldset {
     border: none;
 }
 
-.survey-form .flex {
+#survey-form .flex {
     display: flex;
     flex-direction: column;
 }
@@ -101,9 +101,9 @@ button {
 
 @media (min-width: 768px) {
     
-    .survey-form {
+    #survey-form {
         flex-direction: row;
-    }
+    }Amber A
 
     .section-box label {
         flex-basis: 25%;
